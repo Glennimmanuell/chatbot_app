@@ -27,9 +27,7 @@ class MainActivity : AppCompatActivity() {
         editTextOutput = findViewById(R.id.editTextOutput)
 
         val generativeModel = GenerativeModel(
-            // For text-only input, use the gemini-pro model
             modelName = "gemini-1.5-flash",
-            // Access your API key as a Build Configuration variable (see "Set up your API key" above)
             apiKey = "AIzaSyA5bDdDwFsZ86NXGMpNMdw47bsKIF2dPzU"
         )
         chat = generativeModel.startChat(
