@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="111dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:onClick="buttonSendChat"
+        android:text="Send"
+        app:layout_constraintStart_toEndOf="@+id/editTextInput"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOutput" />
+
+    <EditText
+        android:id="@+id/editTextOutput"
+        android:layout_width="368dp"
+        android:layout_height="368dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:gravity="bottom|start"
+        android:hint="Output displayed here ..."
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="248dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Input here ..."
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOutput" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="323dp"
+        android:layout_height="82dp"
+        android:text="Tanya apa aja"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOutput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
